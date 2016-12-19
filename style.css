@@ -1,0 +1,62 @@
+body{
+	background:rgba(0,0,0,1);
+}
+
+.whole-box{
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	top: 44%;
+	left: 47%;
+	display: flex;
+	justify-content: center;
+	align-content: space-top;
+	background: black;
+	animation: lokendra_ 1500ms linear infinite;
+}
+.whole-box p{
+	font-family: arial;
+	display: block;
+	padding-top:25px;
+    padding-left: 3px;
+    font-size:12px;
+}
+.box{
+
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	position: absolute;
+	background:;
+	top: auto;
+	left: auto;
+	border-bottom: 3px solid black;
+	animation: lokendra 1500ms linear 0ms infinite;
+}
+
+.inside{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	display:block;
+	height: 70px;
+	width: 70px;
+	background:;
+	border-radius: 50%;
+	border-top:3px solid black;
+	animation: lokendra 800ms linear 0ms infinite;
+}
+@keyframes lokendra_ {
+	0%{color:yellow;}
+    25%{color: blue;}
+    50%{color: yellow;}
+    75%{color: lime;}
+	100%{color:peachpuff;}
+}
+@keyframes lokendra {
+    0%{transform:rotate(0deg); border-color: red; color:yellow;}
+    25%{transform:rotate(60deg); border-color: blue;}
+    50%{transform:rotate(120deg); border-color: yellow;}
+    75%{transform:rotate(270deg); border-color: lime;}
+	100%{transform:rotate(359deg); border-color:peachpuff;}
+}
